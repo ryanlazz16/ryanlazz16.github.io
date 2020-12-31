@@ -23,7 +23,7 @@ body {
   padding-right: 100px;
 }
 .hero .about h3 {
-  font-size: 40px;
+  font-size: 50px;
   padding-bottom: 20px;
   font-weight: 200;
   letter-spacing: 5px;
@@ -63,7 +63,6 @@ body {
   justify-content: space-between;
   border-radius: 25px;
   background-color: #1a3137;
-  color: white;
   padding: 25px;
   margin: 40px 0;
 }
