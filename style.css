@@ -22,15 +22,41 @@ body {
   width: 50%;
   padding-right: 100px;
 }
-.hero .about h3 {
+.hero .about h1 {
   font-size: 50px;
   padding-bottom: 20px;
   font-weight: 200;
   letter-spacing: 5px;
 }
+.hero .about button {
+  background-color: white;
+  color: #264952;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  padding: 10px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hero .about button:active {
+  background-color: #1a3137;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.hero .about button:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
 .hero .about h5 {
   font-size: 16px;
   line-height: 1.25rem;
+  margin-bottom: 20px;
 }
 .hero .profile {
   width: 25%;
@@ -52,7 +78,7 @@ body {
 .projects {
   padding: 70px 100px;
 }
-.projects h4 {
+.projects h2 {
   font-weight: 200;
   font-size: 36px;
   margin-bottom: 50px;
@@ -70,7 +96,7 @@ body {
   width: 50%;
   padding: 0.5rem;
 }
-.projects .project .project-left h5 {
+.projects .project .project-left h3 {
   font-size: 28px;
   font-weight: 200;
   padding-bottom: 0.75rem;
@@ -87,10 +113,11 @@ body {
 .projects .project .project-left p {
   font-size: 14px;
   padding-top: 1rem;
-  line-height: 1.1rem;
+  line-height: 1.25rem;
 }
 .projects .project .project-right {
   width: 45%;
+  transition: transform 0.2s;
 }
 .projects .project .project-right img {
   width: 100%;
