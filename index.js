@@ -46,8 +46,6 @@ gsap.from('.projects h2', {
      opacity: 0,
      scrollTrigger: {
           trigger: '.project',
-          start: 'top 90%',
-          end: 'bottom 20%',
           toggleActions: 'restart none none reverse'
      },
 });
