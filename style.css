@@ -117,7 +117,6 @@ body {
 }
 .projects .project .project-right {
   width: 45%;
-  transition: transform 0.2s;
 }
 .projects .project .project-right img {
   width: 100%;
