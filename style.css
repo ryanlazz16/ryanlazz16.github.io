@@ -8,6 +8,8 @@ body {
   background-color: #264952;
   font-family: "Poppins", sans-serif;
   color: white;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -15,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  padding: 150px 30px;
+  margin: 200px 30px;
   position: relative;
 }
 .hero .about {
@@ -76,7 +78,7 @@ body {
 }
 
 .projects {
-  padding: 70px 100px;
+  margin: 70px 100px;
 }
 .projects h2 {
   font-weight: 200;
@@ -85,6 +87,7 @@ body {
 }
 .projects .project {
   display: flex;
+  flex-direction: row;
   max-width: 100%;
   justify-content: space-between;
   border-radius: 25px;
@@ -101,19 +104,56 @@ body {
   font-weight: 200;
   padding-bottom: 0.75rem;
 }
-.projects .project .project-left a {
+.projects .project .project-left a.link {
+  display: inline-block;
   text-decoration: none;
   color: #6dabbb;
   font-size: 16px;
-  padding-right: 20px;
+  margin: 0 20px 1rem 0;
 }
-.projects .project .project-left a:active {
+.projects .project .project-left a.link:active {
   color: white;
 }
 .projects .project .project-left p {
   font-size: 14px;
-  padding-top: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.25rem;
+}
+.projects .project .project-left ul li {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.25rem;
+}
+.projects .project .project-left a.hyperlink {
+  display: inline-block;
+  text-decoration: none;
+  color: #6dabbb;
+}
+.projects .project .project-left .technologies {
+  margin-top: 1rem;
+}
+.projects .project .project-left button {
+  background-color: white;
+  color: #264952;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 2px 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.projects .project .project-left button:active {
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.projects .project .project-left button:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
 .projects .project .project-right {
   width: 45%;
