@@ -24,9 +24,17 @@ body {
   .about {
     width: 50%;
     padding-right: 100px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1a3137;
+      margin-bottom: 1rem;
+    }
+
     h1 {
       font-size: 50px;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
       font-weight: 200;
       letter-spacing: 5px;
     }
@@ -157,9 +165,8 @@ body {
         margin-right: 5px;
         padding: 2px 5px;
         font-family: 'Poppins', sans-serif;
-        // font-weight: 500;
+        font-weight: 500;
         font-size: 14px;
-        // cursor: pointer;
       }
 
       button:active {

@@ -11,6 +11,11 @@ let t1 = gsap.timeline({
           toggleActions: 'restart reverse restart reverse',
      }
 });
+t1.from('.about h4', {
+     duration: 1,
+     x: '100%',
+     opacity: 0,
+}, '0');
 t1.from('.about h1', {
      duration: 1,
      y: '-100%',
