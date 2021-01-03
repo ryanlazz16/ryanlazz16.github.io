@@ -184,6 +184,8 @@ body {
     }
 
     .project-right {
+      display: flex;
+      align-items: center;
       width: 45%;
 
       img {
