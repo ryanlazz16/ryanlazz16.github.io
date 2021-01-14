@@ -20,9 +20,32 @@ body {
   margin: 200px 30px;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin: 100px 30px;
+  }
+}
+@media (max-width: 610px) {
+  .hero {
+    margin: 50px 20px;
+  }
+}
 .hero .about {
   width: 50%;
-  padding-right: 100px;
+  padding-right: 80px;
+}
+@media (max-width: 1200px) {
+  .hero .about {
+    width: 60%;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 610px) {
+  .hero .about {
+    width: 90%;
+  }
 }
 .hero .about h4 {
   font-size: 16px;
@@ -30,11 +53,31 @@ body {
   color: #1a3137;
   margin-bottom: 1rem;
 }
+@media (max-width: 1200px) {
+  .hero .about h4 {
+    display: none;
+  }
+}
 .hero .about h1 {
   font-size: 50px;
   margin-bottom: 20px;
   font-weight: 200;
   letter-spacing: 5px;
+}
+@media (max-width: 610px) {
+  .hero .about h1 {
+    font-size: 36px;
+  }
+}
+.hero .about h5 {
+  font-size: 16px;
+  line-height: 1.25rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 610px) {
+  .hero .about h5 {
+    font-size: 14px;
+  }
 }
 .hero .about button {
   background-color: white;
@@ -50,6 +93,16 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  .hero .about button {
+    width: 110px;
+  }
+}
+@media (max-width: 610px) {
+  .hero .about button {
+    font-size: 14px;
+  }
+}
 .hero .about button:active {
   background-color: #1a3137;
   text-decoration: none;
@@ -61,14 +114,27 @@ body {
   border: none;
   outline: none;
 }
-.hero .about h5 {
-  font-size: 16px;
-  line-height: 1.25rem;
-  margin-bottom: 20px;
-}
 .hero .profile {
   width: 25%;
   border-radius: 50%;
+}
+@media (max-width: 1200px) {
+  .hero .profile {
+    width: 30%;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 992px) {
+  .hero .profile {
+    width: 40%;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 610px) {
+  .hero .profile {
+    width: 70%;
+    margin-bottom: 70px;
+  }
 }
 
 .hero::before {
@@ -86,10 +152,26 @@ body {
 .projects {
   margin: 70px 100px;
 }
+@media (max-width: 768px) {
+  .projects {
+    margin: 70px 50px;
+  }
+}
+@media (max-width: 610px) {
+  .projects {
+    margin: 70px 15px;
+  }
+}
 .projects h2 {
   font-weight: 200;
   font-size: 36px;
   margin-bottom: 50px;
+}
+@media (max-width: 610px) {
+  .projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 .projects .project {
   display: flex;
@@ -101,15 +183,42 @@ body {
   padding: 25px;
   margin: 40px 0;
 }
+@media (max-width: 992px) {
+  .projects .project {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 610px) {
+  .projects .project {
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
 .projects .project .project-left {
   width: 50%;
   padding: 0.5rem;
+}
+@media (max-width: 992px) {
+  .projects .project .project-left {
+    width: 100%;
+  }
+}
+@media (max-width: 610px) {
+  .projects .project .project-left {
+    padding-bottom: 0;
+  }
 }
 .projects .project .project-left h3 {
   font-size: 28px;
   font-weight: 200;
   padding-bottom: 0.75rem;
   line-height: 2rem;
+}
+@media (max-width: 610px) {
+  .projects .project .project-left h3 {
+    font-size: 20px;
+    padding-bottom: 0.25rem;
+  }
 }
 .projects .project .project-left a.link {
   display: inline-block;
@@ -118,18 +227,25 @@ body {
   font-size: 16px;
   margin: 0 20px 1rem 0;
 }
+@media (max-width: 610px) {
+  .projects .project .project-left a.link {
+    font-size: 14px;
+    margin: 0 20px 0.75rem 0;
+  }
+}
 .projects .project .project-left a.link:active {
   color: white;
-}
-.projects .project .project-left p {
-  font-size: 14px;
-  margin-bottom: 0.5rem;
-  line-height: 1.25rem;
 }
 .projects .project .project-left ul li {
   font-size: 14px;
   margin-bottom: 0.5rem;
   line-height: 1.25rem;
+}
+@media (max-width: 610px) {
+  .projects .project .project-left ul li {
+    font-size: 12px;
+    line-height: 1rem;
+  }
 }
 .projects .project .project-left a.hyperlink {
   display: inline-block;
@@ -152,6 +268,11 @@ body {
   font-weight: 500;
   font-size: 14px;
 }
+@media (max-width: 610px) {
+  .projects .project .project-left button {
+    font-size: 12px;
+  }
+}
 .projects .project .project-left button:active {
   background-color: white;
   text-decoration: none;
@@ -167,6 +288,18 @@ body {
   display: flex;
   align-items: center;
   width: 45%;
+}
+@media (max-width: 992px) {
+  .projects .project .project-right {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 610px) {
+  .projects .project .project-right {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 .projects .project .project-right img {
   width: 100%;

@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+@mixin respond-medium {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin respond-small {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin respond-xsmall {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin respond-phone {
+  @media (max-width: 610px) {
+    @content;
+  }
+}
+
 body {
   background-color: #264952;
   font-family: 'Poppins', sans-serif;
@@ -20,15 +44,38 @@ body {
   margin: 200px 30px;
   position: relative;
 
+  @include respond-medium {
+    flex-direction: column-reverse;
+    margin: 100px 30px;
+  }
+
+  @include respond-phone {
+    margin: 50px 20px;
+  }
+
   .about {
     width: 50%;
-    padding-right: 100px;
+    padding-right: 80px;
+
+    @include respond-medium {
+      width: 60%;
+      text-align: center;
+      padding: 0;
+    }
+
+    @include respond-phone {
+      width: 90%;
+    }
 
     h4 {
       font-size: 16px;
       font-weight: 600;
       color: #1a3137;
       margin-bottom: 1rem;
+
+      @include respond-medium {
+        display: none;
+      }
     }
 
     h1 {
@@ -36,6 +83,20 @@ body {
       margin-bottom: 20px;
       font-weight: 200;
       letter-spacing: 5px;
+
+      @include respond-phone {
+        font-size: 36px;
+      }
+    }
+
+    h5 {
+      font-size: 16px;
+      line-height: 1.25rem;
+      margin-bottom: 20px;
+
+      @include respond-phone {
+        font-size: 14px;
+      }
     }
 
     button {
@@ -51,6 +112,14 @@ body {
       font-weight: 500;
       font-size: 16px;
       cursor: pointer;
+
+      @include respond-medium {
+        width: 110px;
+      }
+
+      @include respond-phone {
+        font-size: 14px;
+      }
     }
 
     button:active {
@@ -65,17 +134,26 @@ body {
       border: none;
       outline: none;
     }
-
-    h5 {
-      font-size: 16px;
-      line-height: 1.25rem;
-      margin-bottom: 20px;
-    }
   }
 
   .profile {
     width: 25%;
     border-radius: 50%;
+
+    @include respond-medium {
+      width: 30%;
+      margin-bottom: 70px;
+    }
+
+    @include respond-small {
+      width: 40%;
+      margin-bottom: 70px;
+    }
+
+    @include respond-phone {
+      width: 70%;
+      margin-bottom: 70px;
+    }
   }
 }
 
@@ -94,10 +172,23 @@ body {
 .projects {
   margin: 70px 100px;
 
+  @include respond-xsmall {
+    margin: 70px 50px;
+  }
+
+  @include respond-phone {
+    margin: 70px 15px;
+  }
+
   h2 {
     font-weight: 200;
     font-size: 36px;
     margin-bottom: 50px;
+
+    @include respond-phone {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   .project {
@@ -110,15 +201,37 @@ body {
     padding: 25px;
     margin: 40px 0;
 
+    @include respond-small {
+      flex-direction: column-reverse;
+    }
+
+    @include respond-phone {
+      margin: 20px 0;
+      padding: 20px;
+    }
+
     .project-left {
       width: 50%;
       padding: 0.5rem;
+
+      @include respond-small {
+        width: 100%;
+      }
+
+      @include respond-phone {
+        padding-bottom: 0;
+      }
 
       h3 {
         font-size: 28px;
         font-weight: 200;
         padding-bottom: 0.75rem;
         line-height: 2rem;
+
+        @include respond-phone {
+          font-size: 20px;
+          padding-bottom: 0.25rem;
+        }
       }
 
       a.link {
@@ -127,22 +240,26 @@ body {
         color: #6dabbb;
         font-size: 16px;
         margin: 0 20px 1rem 0;
+
+        @include respond-phone {
+          font-size: 14px;
+          margin: 0 20px 0.75rem 0;
+        }
       }
 
       a.link:active {
         color: white;
       }
 
-      p {
-        font-size: 14px;
-        margin-bottom: 0.5rem;
-        line-height: 1.25rem;
-      }
-
       ul li {
         font-size: 14px;
         margin-bottom: 0.5rem;
         line-height: 1.25rem;
+
+        @include respond-phone {
+          font-size: 12px;
+          line-height: 1rem;
+        }
       }
 
       a.hyperlink {
@@ -167,6 +284,10 @@ body {
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         font-size: 14px;
+
+        @include respond-phone {
+          font-size: 12px;
+        }
       }
 
       button:active {
@@ -187,6 +308,16 @@ body {
       display: flex;
       align-items: center;
       width: 45%;
+
+      @include respond-small {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      @include respond-phone {
+        width: 100%;
+        margin-bottom: 0;
+      }
 
       img {
         width: 100%;
