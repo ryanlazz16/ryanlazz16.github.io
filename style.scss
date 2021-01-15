@@ -167,6 +167,20 @@ body {
   left: -500px;
   z-index: -1;
   background: #396d7a;
+
+  @include respond-xsmall {
+    width: 700px;
+    height: 700px;
+    top: -350px;
+    left: -350px;
+  }
+
+  @include respond-phone {
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: -250px;
+  }
 }
 
 .projects {

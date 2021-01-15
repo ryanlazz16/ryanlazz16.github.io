@@ -148,6 +148,22 @@ body {
   z-index: -1;
   background: #396d7a;
 }
+@media (max-width: 768px) {
+  .hero::before {
+    width: 700px;
+    height: 700px;
+    top: -350px;
+    left: -350px;
+  }
+}
+@media (max-width: 610px) {
+  .hero::before {
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: -250px;
+  }
+}
 
 .projects {
   margin: 70px 100px;
