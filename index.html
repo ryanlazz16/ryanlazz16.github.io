@@ -1,226 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Ryan Lazzareschi</title>
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/cbc31d67ff.js" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" defer></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" defer></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Ryan Lazzareschi</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/cbc31d67ff.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+			defer
+		></script>
 
-     <script src="./index.js" defer></script>
-     <link rel="stylesheet" href="./reset.css" />
-     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-     <section class="hero">
-          <div class="about">
-               <h4>Hi, my name is</h4>
-               <h1>Ryan Lazzareschi</h1>
-               <h5>I'm a third year computer science student attending UC Davis and based in the Bay Area. My current interests are full-stack web development, visualization, and machine learning. I'm currently looking for internship or full-time opportunities beginning in summer 2021 and beyond. Feel free to contact me below!</h5>
-               <a href="https://github.com/ryanlazz16"><button>
-                    <i class="fab fa-github"></i>&nbsp;GitHub
-               </button></a>
-               <a href="https://www.linkedin.com/in/ryanlazzareschi/"><button>
-                    <i class="fab fa-linkedin"></i>&nbsp;LinkedIn
-               </button></a>
-               <a href="mailto:ryanlazz16@gmail.com"><button>
-                    <i class="fas fa-envelope"></i>&nbsp;Email
-               </button></a>
-               <a href="/resume.pdf" download><button>
-                    <i class="fas fa-file-pdf"></i>&nbsp;Resume
-               </button></a>
-          </div>
-          <img class="profile" src="./images/profile.png" alt="Profile Image">
-     </section>
+		<script src="./index.js" defer></script>
+		<link rel="stylesheet" href="./reset.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<section class="hero">
+			<div class="about">
+				<h4>Hi, my name is</h4>
+				<h1>Ryan Lazzareschi</h1>
+				<h5>
+					I'm a recent computer science graduate from UC Davis
+					and based in the Bay Area. My current interests are
+					full-stack web development, visualization, and machine
+					learning. I'm currently looking for internship or
+					full-time opportunities beginning in summer 2021 and
+					beyond. Feel free to contact me below!
+				</h5>
+				<a href="https://github.com/ryanlazz16"
+					><button>
+						<i class="fab fa-github"></i>&nbsp;GitHub
+					</button></a
+				>
+				<a href="https://www.linkedin.com/in/ryanlazzareschi/"
+					><button>
+						<i class="fab fa-linkedin"></i>&nbsp;LinkedIn
+					</button></a
+				>
+				<a href="mailto:ryanlazz16@gmail.com"
+					><button>
+						<i class="fas fa-envelope"></i>&nbsp;Email
+					</button></a
+				>
+				<a href="/resume.pdf" download
+					><button>
+						<i class="fas fa-file-pdf"></i>&nbsp;Resume
+					</button></a
+				>
+			</div>
+			<img
+				class="profile"
+				src="./images/profile.jpg"
+				alt="Profile Image"
+			/>
+		</section>
 
-     <section class="projects">
-          <h2>Projects</h2>
+		<section class="projects">
+			<h2>Projects</h2>
 
-          <div class="project p1">
-               <div class="project-left">
-                    <h3>Uber Data Visualization</h3>
-                    <a class="link" href="https://youtu.be/9sgzIrooOhc">Youtube</a>
-                    <a class="link" href="https://github.com/ryanlazz16/189L-Final">GitHub</a>
-                    <ul>
-                         <li>Interactive Website that visualizes over 18 million Uber pickups in New York City from 2014 and 2015 from this <a class="hyperlink" href="https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city">Kaggle Dataset</a></li>
-                         <li>Uses MapboxGL to implement an animated heatmap over month, day, or hour </li>
-                         <li>Bar Graphs for number of rides over month, day, or hour for user specified locations with D3.js</li>
-                         <li>Simple Node.js/Express Backend</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>Javascript</button>
-                         <button>HTML/CSS</button>
-                         <button>Node.js/Express</button>
-                         <button>D3.js</button>
-                         <button>MapboxGL</button>
-                    </div>
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://youtu.be/9sgzIrooOhc">
-                         <img src="./images/uberDataVis.png" alt="Uber Data Visualization">
-                    </a>
-               </div>
-          </div>
+			<div class="project p1">
+				<div class="project-left">
+					<h3>Uber Data Visualization</h3>
+					<a class="link" href="https://youtu.be/9sgzIrooOhc"
+						>Youtube</a
+					>
+					<a
+						class="link"
+						href="https://github.com/ryanlazz16/189L-Final"
+						>GitHub</a
+					>
+					<ul>
+						<li>
+							Interactive Website that visualizes over 18
+							million Uber pickups in New York City from
+							2014 and 2015 from this
+							<a
+								class="hyperlink"
+								href="https://www.kaggle.com/fivethirtyeight/uber-pickups-in-new-york-city"
+								>Kaggle Dataset</a
+							>
+						</li>
+						<li>
+							Uses MapboxGL to implement an animated
+							heatmap over month, day, or hour
+						</li>
+						<li>
+							Bar Graphs for number of rides over month,
+							day, or hour for user specified locations
+							with D3.js
+						</li>
+						<li>Simple Node.js/Express Backend</li>
+					</ul>
+					<div class="technologies">
+						<button>Javascript</button>
+						<button>HTML/CSS</button>
+						<button>Node.js/Express</button>
+						<button>D3.js</button>
+						<button>MapboxGL</button>
+					</div>
+				</div>
 
-          <div class="project p7">
-               <div class="project-left">
-                    <h3>Graphics Algorithms with OpenGL</h3>
-                    <a class="link" href="https://youtu.be/wQPlBj3w1TA">Youtube</a>
-                    <ul>
-                         <li>C++ Application that implements several fundamental computer graphics algorithms with OpenGL</li>
-                         <li>Interact with 3D .obj objects with Arcball Camera</li>
-                         <li>Phong Lighting and Gouraud Shading to produce smoothly illuminated obejcts</li>
-                         <li>Painter's Algorithm for rasterizing polyons according to their depth</li>
-                         <li>Half-Toning with 3x3 pixel pattern for simulating binary display devices</li>
-                         <li>Shaders for Phong Lighting, Gouraud Shading, and Half-Toning written in GLSL</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>C++</button>
-                         <button>OpenGL</button>
-                    </div> 
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://youtu.be/wQPlBj3w1TA">
-                         <img src="./images/phong.png" alt="Graphics Algorithms with OpenGL">
-                    </a>
-               </div>
-          </div>
+				<div class="project-right">
+					<a href="https://youtu.be/9sgzIrooOhc">
+						<img
+							src="./images/uberDataVis.png"
+							alt="Uber Data Visualization"
+						/>
+					</a>
+				</div>
+			</div>
 
-          <div class="project p2">
-               <div class="project-left">
-                    <h3>Smart Stock</h3>
-                    <a class="link" href="https://youtu.be/bnfUfbfKhEE?t=563">Youtube</a>
-                    <a class="link" href="https://github.com/ECS171-Group-5">GitHub</a>
-                    <ul>
-                         <li>Website that predicts future stock prices for 100 NASDAQ stocks based on a company's quarterly report using a Machine Learning Model</li>
-                         <li>Node.js/Express Backend serves stock data from an AWS MySQL Database</li>
-                         <li>React Frontend to deliver an interactive UI </li>
-                         <li>Stock and Prediction Graph made with D3.js</li>
-                         <li>Neural Network for predicting stock prices built with Python and Tensorflow</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>Javascript</button>
-                         <button>HTML/CSS</button>
-                         <button>Node.js/Express</button>
-                         <button>React</button>
-                         <button>SQL</button>
-                         <button>D3.js</button>
-                         <button>Python</button>
-                         <button>Tensorflow</button>
-                    </div>
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://youtu.be/bnfUfbfKhEE?t=563">
-                         <img src="./images/smartStock.png" alt="Smart Stock">
-                    </a>
-               </div>
-          </div>
+			<div class="project p7">
+				<div class="project-left">
+					<h3>Graphics Algorithms with OpenGL</h3>
+					<a class="link" href="https://youtu.be/wQPlBj3w1TA"
+						>Youtube</a
+					>
+					<ul>
+						<li>
+							C++ Application that implements several
+							fundamental computer graphics algorithms with
+							OpenGL
+						</li>
+						<li>
+							Interact with 3D .obj objects with Arcball
+							Camera
+						</li>
+						<li>
+							Phong Lighting and Gouraud Shading to produce
+							smoothly illuminated obejcts
+						</li>
+						<li>
+							Painter's Algorithm for rasterizing polyons
+							according to their depth
+						</li>
+						<li>
+							Half-Toning with 3x3 pixel pattern for
+							simulating binary display devices
+						</li>
+						<li>
+							Shaders for Phong Lighting, Gouraud Shading,
+							and Half-Toning written in GLSL
+						</li>
+					</ul>
+					<div class="technologies">
+						<button>C++</button>
+						<button>OpenGL</button>
+					</div>
+				</div>
 
-          <div class="project p3">
-               <div class="project-left">
-                    <h3>Coronavirus Testing Centers</h3>
-                    <a class="link" href="https://ryanlazz16.github.io/Bay-Area-Coronavirus-Testing-Centers">Website</a>
-                    <a class="link" href="https://github.com/ryanlazz16/Bay-Area-Coronavirus-Testing-Centers">GitHub</a>
-                    <ul>
-                         <li>Bay Area Coronavirus Testing Centers in a Simple One Page Website with goal of providing people an easy way to find their closest testing center available to them</li>
-                         <li>Website uses data from March 2020 and was built as a concept</li>
-                         <li>Built with Native Javascript, HTML, CSS, and Bootstrap for easy prototyping</li>
-                         <li>Google Maps API to display map of testing centers</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>Javascript</button>
-                         <button>HTML/CSS</button>
-                         <button>Google Maps</button>
-                         <button>Bootstrap</button>
-                    </div>     
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://ryanlazz16.github.io/Bay-Area-Coronavirus-Testing-Centers">
-                         <img src="./images/covidTesting.png" alt="Coronavirus Testing Centers">
-                    </a>
-               </div>
-          </div>
-          
-          <div class="project p4">
-               <div class="project-left">
-                    <h3>S&P 500 Visualization</h3>
-                    <a class="link" href="https://ryanlazz16.github.io/SP500Visualization">Website</a>
-                    <a class="link" href="https://github.com/ryanlazz16/SP500Visualization">GitHub</a>
-                    <ul>
-                         <li>Visualization Website for comparing different sectors and stocks in the S&P 500</li>
-                         <li>Zoomable Treemap and Parallel Coordinates Chart allow for comparing all stocks in one sector</li>
-                         <li>Candlestick Chart shows daily prices for a single stock and Difference Chart compares daily price changes for two stocks</li>
-                         <li>Visualizations built with D3.js</li>
-                         <li>Stock data from Alpha Vantage API</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>Javascript</button>
-                         <button>HTML/CSS</button>
-                         <button>D3.js</button>
-                    </div>       
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://ryanlazz16.github.io/SP500Visualization">
-                         <img src="./images/stockVisualization.png" alt="S&P 500 Visualization">
-                    </a>
-               </div>
-          </div>
+				<div class="project-right">
+					<a href="https://youtu.be/wQPlBj3w1TA">
+						<img
+							src="./images/phong.png"
+							alt="Graphics Algorithms with OpenGL"
+						/>
+					</a>
+				</div>
+			</div>
 
-          <div class="project p5">
-               <div class="project-left">
-                    <h3>Sorting Algorithms Visualizer</h3>
-                    <a class="link" href="https://youtu.be/iYjch18GWvI">Youtube</a>
-                    <a class="link" href="https://github.com/ryanlazz16/Sorting-Algorithms-Visualizer">GitHub</a>
-                    <ul>
-                         <li>C++ Application that visualizes various sorting algorithms</li>
-                         <li>Implemented Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, and Quick Sort</li>
-                         <li>GUI Window and Graphics built with SFML Library</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>C++</button>
-                         <button>SFML</button>
-                    </div>     
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://youtu.be/iYjch18GWvI">
-                         <img src="./images/sorting.png" alt="Sorting Algorithms Visualizer">
-                    </a>
-               </div>
-          </div>
+			<div class="project p2">
+				<div class="project-left">
+					<h3>Smart Stock</h3>
+					<a
+						class="link"
+						href="https://youtu.be/bnfUfbfKhEE?t=563"
+						>Youtube</a
+					>
+					<a
+						class="link"
+						href="https://github.com/ECS171-Group-5"
+						>GitHub</a
+					>
+					<ul>
+						<li>
+							Website that predicts future stock prices for
+							100 NASDAQ stocks based on a company's
+							quarterly report using a Machine Learning
+							Model
+						</li>
+						<li>
+							Node.js/Express Backend serves stock data
+							from an AWS MySQL Database
+						</li>
+						<li>
+							React Frontend to deliver an interactive UI
+						</li>
+						<li>
+							Stock and Prediction Graph made with D3.js
+						</li>
+						<li>
+							Neural Network for predicting stock prices
+							built with Python and Tensorflow
+						</li>
+					</ul>
+					<div class="technologies">
+						<button>Javascript</button>
+						<button>HTML/CSS</button>
+						<button>Node.js/Express</button>
+						<button>React</button>
+						<button>SQL</button>
+						<button>D3.js</button>
+						<button>Python</button>
+						<button>Tensorflow</button>
+					</div>
+				</div>
 
-          <div class="project p6">
-               <div class="project-left">
-                    <h3>Neuroevolution Flappy Bird</h3>
-                    <a class="link" href="https://youtu.be/RdK7y9B1Lsg?t=23">Youtube</a>
-                    <a class="link" href="https://github.com/ryanlazz16/Neuroevolution-Flappy-Bird">GitHub</a>
-                    <ul>
-                         <li>Java Application that mimics the Flappy Bird game</li>
-                         <li>Constructed my own Neural Network to develop a Machine Learning Model to play the game</li>
-                         <li>Learns via Neuroevolution, which simulates evolution using a Genetic Algorithm</li>
-                         <li>GUI Window and Graphics built with Java's Abstract WIndow Tooltkit (AWT)</li>
-                    </ul>
-                    <div class="technologies">
-                         <button>Java</button>
-                         <button>Java AWT</button>
-                    </div> 
-               </div>
-               
-               <div class="project-right">
-                    <a href="https://youtu.be/RdK7y9B1Lsg?t=23">
-                         <img src="./images/flappy.png" alt="Neuroevolution Flappy Bird">
-                    </a>
-               </div>
-          </div>
+				<div class="project-right">
+					<a href="https://youtu.be/bnfUfbfKhEE?t=563">
+						<img
+							src="./images/smartStock.png"
+							alt="Smart Stock"
+						/>
+					</a>
+				</div>
+			</div>
 
-     </section>
-</body>
+			<div class="project p3">
+				<div class="project-left">
+					<h3>Coronavirus Testing Centers</h3>
+					<a
+						class="link"
+						href="https://ryanlazz16.github.io/Bay-Area-Coronavirus-Testing-Centers"
+						>Website</a
+					>
+					<a
+						class="link"
+						href="https://github.com/ryanlazz16/Bay-Area-Coronavirus-Testing-Centers"
+						>GitHub</a
+					>
+					<ul>
+						<li>
+							Bay Area Coronavirus Testing Centers in a
+							Simple One Page Website with goal of
+							providing people an easy way to find their
+							closest testing center available to them
+						</li>
+						<li>
+							Website uses data from March 2020 and was
+							built as a concept
+						</li>
+						<li>
+							Built with Native Javascript, HTML, CSS, and
+							Bootstrap for easy prototyping
+						</li>
+						<li>
+							Google Maps API to display map of testing
+							centers
+						</li>
+					</ul>
+					<div class="technologies">
+						<button>Javascript</button>
+						<button>HTML/CSS</button>
+						<button>Google Maps</button>
+						<button>Bootstrap</button>
+					</div>
+				</div>
+
+				<div class="project-right">
+					<a
+						href="https://ryanlazz16.github.io/Bay-Area-Coronavirus-Testing-Centers"
+					>
+						<img
+							src="./images/covidTesting.png"
+							alt="Coronavirus Testing Centers"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div class="project p4">
+				<div class="project-left">
+					<h3>S&P 500 Visualization</h3>
+					<a
+						class="link"
+						href="https://ryanlazz16.github.io/SP500Visualization"
+						>Website</a
+					>
+					<a
+						class="link"
+						href="https://github.com/ryanlazz16/SP500Visualization"
+						>GitHub</a
+					>
+					<ul>
+						<li>
+							Visualization Website for comparing different
+							sectors and stocks in the S&P 500
+						</li>
+						<li>
+							Zoomable Treemap and Parallel Coordinates
+							Chart allow for comparing all stocks in one
+							sector
+						</li>
+						<li>
+							Candlestick Chart shows daily prices for a
+							single stock and Difference Chart compares
+							daily price changes for two stocks
+						</li>
+						<li>Visualizations built with D3.js</li>
+						<li>Stock data from Alpha Vantage API</li>
+					</ul>
+					<div class="technologies">
+						<button>Javascript</button>
+						<button>HTML/CSS</button>
+						<button>D3.js</button>
+					</div>
+				</div>
+
+				<div class="project-right">
+					<a
+						href="https://ryanlazz16.github.io/SP500Visualization"
+					>
+						<img
+							src="./images/stockVisualization.png"
+							alt="S&P 500 Visualization"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div class="project p5">
+				<div class="project-left">
+					<h3>Sorting Algorithms Visualizer</h3>
+					<a class="link" href="https://youtu.be/iYjch18GWvI"
+						>Youtube</a
+					>
+					<a
+						class="link"
+						href="https://github.com/ryanlazz16/Sorting-Algorithms-Visualizer"
+						>GitHub</a
+					>
+					<ul>
+						<li>
+							C++ Application that visualizes various
+							sorting algorithms
+						</li>
+						<li>
+							Implemented Selection Sort, Bubble Sort,
+							Insertion Sort, Merge Sort, and Quick Sort
+						</li>
+						<li>
+							GUI Window and Graphics built with SFML
+							Library
+						</li>
+					</ul>
+					<div class="technologies">
+						<button>C++</button>
+						<button>SFML</button>
+					</div>
+				</div>
+
+				<div class="project-right">
+					<a href="https://youtu.be/iYjch18GWvI">
+						<img
+							src="./images/sorting.png"
+							alt="Sorting Algorithms Visualizer"
+						/>
+					</a>
+				</div>
+			</div>
+
+			<div class="project p6">
+				<div class="project-left">
+					<h3>Neuroevolution Flappy Bird</h3>
+					<a
+						class="link"
+						href="https://youtu.be/RdK7y9B1Lsg?t=23"
+						>Youtube</a
+					>
+					<a
+						class="link"
+						href="https://github.com/ryanlazz16/Neuroevolution-Flappy-Bird"
+						>GitHub</a
+					>
+					<ul>
+						<li>
+							Java Application that mimics the Flappy Bird
+							game
+						</li>
+						<li>
+							Constructed my own Neural Network to develop
+							a Machine Learning Model to play the game
+						</li>
+						<li>
+							Learns via Neuroevolution, which simulates
+							evolution using a Genetic Algorithm
+						</li>
+						<li>
+							GUI Window and Graphics built with Java's
+							Abstract WIndow Tooltkit (AWT)
+						</li>
+					</ul>
+					<div class="technologies">
+						<button>Java</button>
+						<button>Java AWT</button>
+					</div>
+				</div>
+
+				<div class="project-right">
+					<a href="https://youtu.be/RdK7y9B1Lsg?t=23">
+						<img
+							src="./images/flappy.png"
+							alt="Neuroevolution Flappy Bird"
+						/>
+					</a>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
