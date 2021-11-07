@@ -1,4 +1,4 @@
-const numProjects = 8;
+const numProjects = 9;
 
 gsap.registerPlugin(ScrollTrigger);
 
